@@ -54,7 +54,7 @@ My test harness loads the script in Node.js and supplies mocks for ThingWorx obj
 
 The agent follows the same sequence for each change.
 
-![The agent edits the service JavaScript, runs ESLint and Node.js unit tests, and returns to editing if either fails. Once both pass, I review the dry-run diff, import into the ThingWorx development server, and validate the service at runtime.](diagram.svg)
+{{< figure src="diagram.svg" width="100%" alt="The agent edits the service JavaScript, runs ESLint and Node.js unit tests, and returns to editing if either fails. Once both pass, I review the dry-run diff, import into the ThingWorx development server, and validate the service at runtime." >}}
 
 The edit, lint and test cycle runs locally. The deployment step brings ThingWorx back into the loop.
 
