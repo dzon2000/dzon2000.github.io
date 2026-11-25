@@ -1,0 +1,30 @@
+baseURL = 'https://dzon2000.github.io/'
+locale = 'en'
+title = 'AIoT Notes'
+timeZone = 'Europe/Warsaw'
+enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = 'github.com/adityatelange/hugo-PaperMod'
+
+[params]
+  description = 'A personal blog on artificial intelligence and the Internet of Things.'
+  mainSections = ['posts']
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = 'AIoT Notes'
+    Content = 'Experiments and field notes on artificial intelligence, connected devices, and edge computing.'
+
+[[menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 10
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 20
